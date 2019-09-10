@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container {
+  padding: 16px;
+}
+</style>
+
+</head>
+<body><center>
+<form action="CustomerServlet" >
+<table >
+<tr><th colspan="2" > Book Hotel</th></tr>
+  <tr>
+
+  <tr>
+    <td>Enter Hotel Name</td>
+    <td><input type="text" placeholder="Hotel Name" name="hotelName" required></td>
+   
+  </tr>
+  <tr>
+    <td>From Date</td>
+    <td><input type="date" placeholder="yyyy-mm-dd" name="fromDate" required></td>
+  
+  </tr>
+  <tr>
+    <td>To Date</td>
+    <td><input type="date" placeholder="yyyy-mm-dd" name="toDate" required></td>
+    
+  </tr>
+  <tr>
+    <td>Number of Rooms</td>
+    <td><input type="text" placeholder="No of Room" name="noOfRoom" required></td>
+   
+  </tr>
+  
+</table>
+<center>
+<input class="container" style="background-color: lightgreen; width:400px;" type="submit" name="action" value="BookHotel">
+</center>
+</form></center>
+</body>
+
+
+</html>
